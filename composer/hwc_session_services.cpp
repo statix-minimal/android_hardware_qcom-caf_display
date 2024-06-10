@@ -1126,7 +1126,7 @@ int HWCSession::DisplayConfigImpl::SetCWBOutputBuffer(uint32_t disp_id,
     disp_type = HWC_DISPLAY_EXTERNAL;
   } else if (disp_id == UINT32(DisplayConfig::DisplayType::kBuiltIn2)) {
     dpy_index = hwc_session_->GetDisplayIndex(qdutils::DISPLAY_BUILTIN_2);
-    disp_type = HWC_DISPLAY_BUILTIN_2;
+    disp_type = qdutils::HWC_DISPLAY_BUILTIN_2;
   } else {
     DLOGE("CWB is supported on primary and external displays only at present.");
     return -1;

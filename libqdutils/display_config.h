@@ -90,6 +90,24 @@ enum {
     DISPLAY_PORT_DP,
 };
 
+enum {
+  HWC_DISPLAY_PRIMARY = 0,
+  HWC_DISPLAY_EXTERNAL = 1,  // HDMI, DP, etc.
+
+  HWC_DISPLAY_EXTERNAL_2 = 2,
+  HWC_DISPLAY_EXTERNAL_3 = 3,
+  HWC_DISPLAY_EXTERNAL_4 = 4,
+
+  HWC_DISPLAY_BUILTIN_2 = 5,
+  HWC_DISPLAY_BUILTIN_3 = 6,
+  HWC_DISPLAY_BUILTIN_4 = 7,
+
+  HWC_DISPLAY_VIRTUAL = 8,
+
+  HWC_NUM_PHYSICAL_DISPLAY_TYPES = 8,
+  HWC_NUM_DISPLAY_TYPES = 9,
+};
+
 // Display Attributes that are available to clients of this library
 // Not to be confused with a similar struct in hwc_utils (in the hwc namespace)
 typedef struct DisplayAttributes {
